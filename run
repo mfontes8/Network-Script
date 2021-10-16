@@ -2,11 +2,11 @@
 #Michael Fontes
 
 #IP info
-echo 'Displaying All IPs within this Network'
+echo 'Displaying All IPs and interfaces within this Network'
 echo ' '
 ip addr
 
-#displays route table
+#displays route table and gateway
 echo ' '
 echo 'Displaying Route Table for Current Network'
 echo " "
