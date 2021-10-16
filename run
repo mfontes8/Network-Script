@@ -1,0 +1,26 @@
+#!/bin/bash
+#Michael Fontes
+
+#IP info
+echo 'Displaying All IPs within this Network'
+echo ' '
+ip addr
+
+#displays route table
+echo ' '
+echo 'Displaying Route Table for Current Network'
+echo " "
+ip route
+
+#Displays DNS Server Address and DNS Domain Name
+echo ' '
+echo 'Displaying DNS Server Address'
+systemd-resolve --status | grep "DNS Server"
+systemd-resolve --status | grep "DNS Domain"
+
+#Ping Google to see if current network is capable of reaching other host networks
+echo ' ' 
+echo 'Pinging Google.com to find out if network reaches other hosts'
+ping google.com -c 4
+
+
